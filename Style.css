@@ -1,0 +1,346 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: "Oswald " sans-serif;
+}
+:root {
+ --header-footer:#2E1F1B;
+ --body:#5E4B43;
+ --body-2:#8d6e63;
+ --text:#ffff;
+}
+body {
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.video-background {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    opacity: 90%;
+    background: #5E4B43;
+  }
+  
+  .video-background video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100vh;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    z-index: -1;
+    
+  }
+  
+  .video-background .content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    top: 40%;
+  }
+  header {
+    background-color: var(--header-footer);
+    height: 6rem;
+    border-radius: 25px;
+    width: 85rem;
+    margin-top: -1rem;
+    margin-left: 3%;
+    position: fixed;
+    margin-top: -18rem;
+  }
+  span {
+    font-size: 2rem;
+    font-family: "Audiowide", sans-serif;
+    font-weight:900;
+    text-align: center;
+  }
+  ul {
+    list-style: none;
+    margin-right: 10%;
+  }
+  li {
+    display: inline;
+    padding-left: 5%;
+    justify-content: center;
+  }
+  a {
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+    font-family: "Oswald", sans-serif;
+    padding-top: 2rem;
+  }
+  a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: bolder;
+}
+  h1 {
+    color: white;
+    font-size: 3rem;
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+    padding-top: 10rem;
+    font-weight: 450;
+  }
+  strong {
+    font-weight: 900;
+    color: #2E1F1B;
+  }
+  h2 strong  {
+    font-size: 2.5rem;
+    font-weight: 900;
+  }
+  h2 {
+    font-size: 2.5rem;
+    font-family: "Oswald", sans-serif;
+  }
+.btn {
+    background-color: #2E1F1B;
+    height: 3rem;
+    width: 10rem;
+    border-radius: 5rem;
+    color: white;
+    font-size: 1.2rem;
+    font-family: "Oswald", sans-serif;
+    margin-top: 2rem;
+}
+section {
+    height: 100vh;
+    background-color: var(--body);
+}
+.about h1 {
+    font-size: 5rem;
+}
+p {
+    font-size: 3rem;
+}
+._{
+    font-size: 1.5rem;
+}
+.hh1 {
+    font-size: 6rem;
+    color: var(--header-footer);
+    margin-top: -17rem;
+    margin-left: 12rem;
+}
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+  }
+  
+  .about-text {
+    flex: 1 1 60%;
+  }
+  
+  .about-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #111;
+  }
+  
+  .about-text p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #ffff;
+    font-family: "Oswald", sans-serif;;
+  }
+  
+  .about-video {
+    flex: 1 1 35%;
+    max-width: 400px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    border: 3px solid var(--header-footer);
+    box-shadow: 0 0 25px var(--header-footer);
+  }
+  
+  .about-video video {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+
+.listing {
+  padding: 60px 0;
+  background-color: var(--body-2);
+}
+
+.listing h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.car-listing {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 0 20px;
+}
+
+.car-card {
+  position: relative;
+  width: 320px;
+  height: 220px;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+  background: #000;
+  cursor: pointer;
+}
+
+.car-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.car-info {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.75);
+  padding: 20px;
+  text-align: center;
+  transition: all 0.4s ease;
+}
+
+.car-card:hover .car-info {
+  bottom: 0;
+}
+
+.car-info h3 {
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+  color: #ffff;
+}
+
+.car-info p {
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+  color: #ffff;
+}
+
+.btn {
+  display: inline-block;
+  padding: 8px 15px;
+  background: var(--body-2);
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 1rem;
+
+}
+
+.btn:hover {
+  background: #c39686;
+  color: white;
+  text-decoration: none;
+}
+
+.contact  {
+  height: 100vh;
+  background-color: var(--body);
+}
+.contact h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: -10rem;
+}
+.hhh1 {
+  color: var(--header-footer);
+  font-size: 4rem;
+  font-weight: 700;
+  margin-left: 8rem;
+  padding-top: -20rem;
+}
+input {
+  margin-left:25rem;
+  margin-top: 1rem;
+  justify-content: center;
+  align-items: center;
+  padding: 0,0,0,25rem;
+  border: none;
+  border-radius: 10px;
+  width: 50%;
+  stroke-opacity: 100%;
+  height: 3rem;
+  font-size: 1rem;
+  background-color: grey;
+  opacity: 60%;
+  border: 2px solid var(--header-footer);
+  color: white;
+}
+::placeholder {
+  color: white;
+  opacity: 100%;
+  margin-left: 0.9rem;
+  padding: 12px;
+}
+textarea {
+  margin-left: 25rem;
+  margin-top: 1rem;
+  border: 2px solid var(--header-footer);
+  padding: 0.5rem;
+  border-radius: 10px;
+  width: 50%;
+  height: 5rem;
+  font-size: 1rem;
+  background-color: grey;
+  opacity: 60%;
+  color: white;
+}
+.contact button {
+  margin-left: 40rem;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 10px;
+  width: 10rem;
+  height: 3rem;
+  font-size: 1rem;
+  background-color: var(--header-footer);
+  color: white;
+  cursor: pointer;
+}
+button:hover {
+    background-color: var(--body-2);
+    color: white;
+}
+.contact button:hover {
+  background-color: var(--body-2);
+  color: white;
+  }
+.image img {
+  padding-top: -20rem;
+  padding: 1rem;
+}
+
+footer {
+  background-color: var(--header-footer);
+}
+footer h1 {
+  color: white;
+  font-size: 5rem;
+  margin-top: -10rem;
+}
